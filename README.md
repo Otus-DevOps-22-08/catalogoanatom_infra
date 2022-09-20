@@ -41,3 +41,7 @@ Last login: Tue Sep 20 16:13:28 2022 from 10.128.0.22
 # HW 3 Additional
 bastion_IP = 51.250.74.25
 someinternalhost_IP = 10.128.0.8
+
+# HW 4
+testapp_IP = 35.198.167.169
+testapp_port = 9292
