@@ -8,7 +8,7 @@ I have add dedicate file for otus hosts:
 ~/.ssh$ cat otus
 Host bastion
   user amartynov
-  HostName 84.201.159.220
+  HostName 51.250.74.25
 
 Host someinternalhost
   user amartynov
@@ -39,5 +39,5 @@ Last login: Tue Sep 20 16:13:28 2022 from 10.128.0.22
 
 
 # HW 3 Additional
-bastion_IP = 84.201.159.220
+bastion_IP = 51.250.74.25
 someinternalhost_IP = 10.128.0.8
