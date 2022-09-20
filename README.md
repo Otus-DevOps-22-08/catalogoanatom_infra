@@ -1,7 +1,7 @@
 # catalogoanatom_infra
 catalogoanatom Infra repository
 
-HW #2  Solution for YANDEX.cloud:
+# HW 2  Solution for YANDEX.cloud:
 
 I have add dedicate file for otus hosts:
 
@@ -35,3 +35,9 @@ Welcome to Ubuntu 20.04.4 LTS (GNU/Linux 5.4.0-124-generic x86_64)
 Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
 
 Last login: Tue Sep 20 16:13:28 2022 from 10.128.0.22
+
+
+
+# HW 3 Additional
+bastion_IP = 84.201.159.220
+someinternalhost_IP = 10.128.0.8
