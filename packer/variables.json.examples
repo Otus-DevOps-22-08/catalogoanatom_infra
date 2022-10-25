@@ -1,2 +1,6 @@
 {
-  }
+  "service_account_key_file": "/home/someuser/sec/key.json",
+  "folder_id": "233223322",
+  "source_image_family": "XaOS-2202-nosupport",
+  "image_name": "reddit-base-{{timestamp}}"
+}
