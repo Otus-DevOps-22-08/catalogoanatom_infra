@@ -1,3 +1,7 @@
+variable "token" {
+  description = "Token"
+}
+
 variable "cloud_id" {
   description = "Cloud"
 }
