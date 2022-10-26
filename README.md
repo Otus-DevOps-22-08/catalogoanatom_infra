@@ -48,3 +48,6 @@ testapp_port = 9292
 
 # HW 5
 OS image creating using packer. Variables parametrization using external variables.json file.
+
+# HW 6
+Terraform-1 main part
