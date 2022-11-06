@@ -15,6 +15,23 @@ provider "yandex" {
   zone      = var.zone
 }
 
+
+
+
+resource "yandex_vpc_network" "app-network" {
+  name = "reddit-app-network"
+}
+
+resource "yandex_vpc_subnet" "app-subnet" {
+  name           = "reddit-app-subnet"
+  zone           = "ru-central1-a"
+  network_id     = "${yandex_vpc_network.app-network.id}"
+  v4_cidr_blocks = ["192.168.10.0/24"]
+}
+
+
+
+
 resource "yandex_compute_instance" "app" {
   name = "reddit-app"
 
@@ -34,11 +51,13 @@ resource "yandex_compute_instance" "app" {
   metadata = {
     ssh-keys = "ubuntu:${file(var.public_key_path)}"
   }
+
+
   network_interface {
-    # Указан id подсети default-ru-central1-a
-    subnet_id = var.subnet_id
-    nat       = true
+    subnet_id = yandex_vpc_subnet.app-subnet.id
+    nat = true
   }
+
 
 
   connection {
@@ -47,7 +66,7 @@ resource "yandex_compute_instance" "app" {
     user  = "ubuntu"
     agent = false
     # путь до приватного ключа
-    private_key = var.private_key_path
+    private_key = "${file(var.private_key_path)}"
   }
 
   provisioner "file" {
