@@ -31,3 +31,13 @@ variable "private_key_path" {
   # Описание переменной
   description = "Path to the private key used for ssh access"
 }
+
+variable app_disk_image {
+  description = "Disk image for reddit app"
+  default = "app-reddit"
+}
+
+variable db_disk_image {
+  description = "Disk image for reddit db"
+  default = "db-reddit"
+}
