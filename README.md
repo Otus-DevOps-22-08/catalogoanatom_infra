@@ -45,3 +45,6 @@ someinternalhost_IP = 10.128.0.8
 # HW 4
 testapp_IP = 51.250.87.64
 testapp_port = 9292
+
+# HW 5
+OS image creating using packer. Variables parametrization using external variables.json file.
