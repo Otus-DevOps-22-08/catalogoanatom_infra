@@ -32,12 +32,12 @@ variable "private_key_path" {
   description = "Path to the private key used for ssh access"
 }
 
-variable app_disk_image {
+variable "app_disk_image" {
   description = "Disk image for reddit app"
-  default = "app-reddit"
+  default     = "app-reddit"
 }
 
-variable db_disk_image {
+variable "db_disk_image" {
   description = "Disk image for reddit db"
-  default = "db-reddit"
+  default     = "db-reddit"
 }
