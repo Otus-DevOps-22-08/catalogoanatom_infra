@@ -5,7 +5,7 @@ backend "s3" {
   region     = "ru-central1"
   key        = "tfstate/terraform_state.tfstate"
   access_key = "YCAJEk47-PZ_hlO95-1sxzp-P"
-  secret_key = "YCOidQJR8Pkd1pgmNf3Z9vuO9KLXm6isBpz6sLqM"
+  secret_key = "YCOidQJR8Pkd1pgmNf3Z9vuO9KLXm6isBpz6sLqMM"
 
   skip_region_validation      = true
   skip_credentials_validation = true
