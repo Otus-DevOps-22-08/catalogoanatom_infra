@@ -54,4 +54,4 @@ Terraform-1 main part
 
 # HW 7
 Terraform-2 main part
-* Using external S3 backet to save tfstate
+* Using external S3 bucket to save tfstate
