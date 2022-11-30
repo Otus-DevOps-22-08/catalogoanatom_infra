@@ -53,6 +53,7 @@ OS image creating using packer. Variables parametrization using external variabl
 Terraform-1 main part
 
 # HW 7
+ansible-1
 
 # HW 8
 Ansible-1
@@ -113,3 +114,7 @@ $ ansible all -m ping
 Works as designed!
 
 $terraform destroy
+=======
+Terraform-2 main part
+* Using external S3 bucket to save tfstate
+
