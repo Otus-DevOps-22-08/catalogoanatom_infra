@@ -51,3 +51,65 @@ OS image creating using packer. Variables parametrization using external variabl
 
 # HW 6
 Terraform-1 main part
+
+# HW 7
+
+# HW 8
+Ansible-1
+
+inventory.py -  script that dynamically convert terratorm.tfstate to inventory.json
+
+$terraform apply:
+
+...
+
+Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+external_ip_address_app = "51.250.86.93"
+external_ip_address_db = "51.250.73.238"
+
+$./inventory.py --list | jq
+
+{
+  "all": {
+    "hosts": [
+      "51.250.73.238",
+      "51.250.86.93"
+    ]
+  },
+  "_meta": {
+    "hostvars": {
+      "51.250.86.93": {
+        "hostname": "app"
+      },
+      "51.250.73.238": {
+        "hostname": "db"
+      }
+    }
+  }
+}
+
+$./inventory.py --list | jq > inventory.json
+
+$ ansible all -m ping
+51.250.73.238 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+51.250.86.93 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+
+
+Works as designed!
+
+$terraform destroy
