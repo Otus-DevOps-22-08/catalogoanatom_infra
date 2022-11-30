@@ -52,10 +52,10 @@ OS image creating using packer. Variables parametrization using external variabl
 # HW 6
 Terraform-1 main part
 
-# HW 7
-ansible-1
+Terraform-2 main part
+* Using external S3 bucket to save tfstate
 
-# HW 8
+# HW 7
 Ansible-1
 
 inventory.py -  script that dynamically convert terratorm.tfstate to inventory.json
@@ -110,11 +110,8 @@ $ ansible all -m ping
     "ping": "pong"
 }
 
-
 Works as designed!
 
 $terraform destroy
-=======
-Terraform-2 main part
-* Using external S3 bucket to save tfstate
+
 
