@@ -2,12 +2,12 @@
   debug:
     msg: "This host is in {{ env }} environment!!!"
 
-- name: Add unit file for Puma
-  become: true
-  copy:
-    src: puma.service
-    dest: /etc/systemd/system/puma.service
-  notify: reload puma
+#- name: Add unit file for Puma
+#  become: true
+#  copy:
+#    src: puma.service
+#    dest: /etc/systemd/system/puma.service
+#  notify: reload puma
 
 - name: Add config for DB connection
   template:
@@ -15,6 +15,13 @@
     dest: /home/ubuntu/db_config
     owner: ubuntu
     group: ubuntu
+
+- name: Add unit file for Puma
+  become: true
+  copy:
+    src: puma.service
+    dest: /etc/systemd/system/puma.service
+  notify: reload puma
 
 - name: enable puma
   become: true
