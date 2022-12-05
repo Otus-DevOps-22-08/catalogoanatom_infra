@@ -1,6 +1,7 @@
 {
-  "service_account_key_file": "key.json",
-  "folder_id": "233223322",
-  "source_image_family": "XaOS-2202-nosupport",
-  "image_name": "reddit-base-{{timestamp}}"
+  "service_account_key_file": "packer/key.json.example",
+  "folder_id": "b1geuc7kufjok1fnrn9c",
+  "source_image_family": "ubuntu-1604-lts",
+  "image_name": "reddit-base-{{timestamp}}",
+  "user": "appuser"
 }
