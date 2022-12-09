@@ -7,13 +7,15 @@ def my_inventory():
         'all': {
             'hosts': [db_ip, app_ip]
         },
+        'db': { 'hosts':[db_ip]},
+        'app': { 'hosts':[app_ip]},
         '_meta': {
             'hostvars': {
                 app_ip: {
-                    'hostname': 'app'
+                    'hostname': 'appserver'
                 },
                 db_ip: {
-                    'hostname': 'db'
+                    'hostname': 'dbserver'
                 }
             }
         }

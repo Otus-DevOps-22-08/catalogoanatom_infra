@@ -7,7 +7,7 @@
     - name: Install git
       apt:
         name: git
-        state: latest
+        state: present
         update_cache: yes
 
     - name: Fetch the latest version of application code
