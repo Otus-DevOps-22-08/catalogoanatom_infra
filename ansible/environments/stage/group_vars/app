@@ -1,4 +1,4 @@
-db_host: 158.160.48.135
+db_host: 10.10.10.10
 nginx_sites:
   default:
     - listen 80
