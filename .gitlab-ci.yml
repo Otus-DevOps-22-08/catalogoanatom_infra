@@ -36,5 +36,5 @@ deploy_dev_job:
   script:
     - echo 'Deploy'
   environment:
-    neme: dev
+    name: dev
     url: http://dev.example.com
