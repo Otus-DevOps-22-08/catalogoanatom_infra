@@ -114,4 +114,5 @@ Works as designed!
 
 $terraform destroy
 
-
+## HW 19 gitlab-ci
+use user yc-user, key: ~./ssh/yc
